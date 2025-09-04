@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      background: #121212; /* Dark background */
+      color: #e0e0e0; /* Light gray text */
+    }
+
+    /* Header & Footer */
+    header, footer {
+      background: linear-gradient(135deg, #2a0d4e, #1a093b);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #bb86fc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+    nav a:hover {
+      color: #00f5ff;
+      text-shadow: 0 0 8px #00f5ff, 0 0 15px #00f5ff;
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #1e1e2f;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      transition: background 0.5s, color 0.5s;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #bb86fc;
+    }
+
+    /* Project Grid */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .project {
+      background: #2a2a40;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 15px #00f5ff, 0 0 30px #00f5ff;
+    }
+
+    /* Resume Section */
+    .resume-actions {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .resume-actions a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      background: linear-gradient(135deg, #7b2ff7, #f107a3);
+      color: white;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+    .resume-actions a:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 15px #00f5ff, 0 0 30px #00f5ff;
+    }
+
+    /* YouTube iframe styling */
+    iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 10px;
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    iframe:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00f5ff, 0 0 25px #00f5ff;
+    }
+
+    /* Buttons */
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      background: linear-gradient(135deg, #7b2ff7, #f107a3);
+      color: white;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+    a.button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 15px #00f5ff, 0 0 30px #00f5ff;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Good day to visitor, my name is Aidil Syahlyzad and this website is my portfolio to show you my past works.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <div class="project">
+        <h3>Pilihan</h3>
+        <p>This is a short film with the title of "Pilihan" with the genre of thriller. This is one of my short film production during 2nd semester of Diploma in Film.</p>
+        <p>Role during production: Director</p>
+        <h2>Project Video Demo</h2>
+        <iframe src="https://www.youtube.com/embed/RB9i-L2rpqU" allowfullscreen></iframe>
+        <p>Watch the full version:</p>
+        <a class="button" href="https://youtu.be/RB9i-L2rpqU" target="_blank" rel="noopener noreferrer">Watch Full Video</a>
+      </div>
+
+      <div class="project">
+        <h3>Dawai cover by Amsyar Lee</h3>
+        <p>A music video with the theme "Solidarity with Palestine". Original song is by Fadhilah Intan and this song is covered by Amsyar Lee. This music video is also my project during 2nd semester of Diploma in Film</p>
+        <p>Role during production: Co-editor</p>
+        <h2>Project Video Demo</h2>
+        <iframe src="https://www.youtube.com/embed/ZUyDaPfw6RY" allowfullscreen></iframe>
+        <p>Watch the full version:</p>
+        <a class="button" href="https://youtu.be/ZUyDaPfw6RY" target="_blank" rel="noopener noreferrer">Watch Full Video</a>
+      </div>
+
+      <div class="project">
+        <h3>Interlinked</h3>
+        <p>A short film with the drama/romance genre. This is my short film production for my 3rd semester of studying Diploma in Film</p>
+        <p>Role during production: Set design, prop master</p>
+        <h2>Project Video Demo</h2>
+        <iframe src="https://www.youtube.com/embed/xMPxVtNVsfE" allowfullscreen></iframe>
+        <p>Watch the full version:</p>
+        <a class="button" href="https://youtu.be/xMPxVtNVsfE" target="_blank" rel="noopener noreferrer">Watch Full Video</a>
+      </div>
+
+      <div class="project">
+        <h3>AI: Artificial Inspiration</h3>
+        <p>A documentary regarding the threat of AI in creative industry. This is my documentary production for my 3rd semester of Diploma in Film.</p>
+        <p>Role during production: Assistant director</p>
+        <h2>Project Video Demo</h2>
+        <iframe src="https://www.youtube.com/embed/VOVubPsshlo" allowfullscreen></iframe>
+        <p>Watch the full version:</p>
+        <a class="button" href="https://youtu.be/VOVubPsshlo" target="_blank" rel="noopener noreferrer">Watch Full Video</a>
+      </div>
+
+      <div class="project">
+        <h3>Tiga Batang</h3>
+        <p>My Final Year Project for Diploma in Film.</p>
+        <p>Role during production: Assistant director</p>
+        <h2>Project Video Demo</h2>
+        <iframe src="https://www.youtube.com/embed/XbiSRvq5xFM" allowfullscreen></iframe>
+        <p>Watch the full version:</p>
+        <a class="button" href="https://youtu.be/XbiSRvq5xFM" target="_blank" rel="noopener noreferrer">Watch Full Video</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Here is my resume. You can review it online or download it below:</p>
+    <div class="resume-actions">
+      <a href="website-resume.pdf" download>Download PDF</a>
+      <a href="website-resume.pdf" target="_blank" rel="noopener noreferrer">Open Full Screen</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:aidilsyahlyzad007@gmail.com">aidilsyahlyzad007@gmail.com</a></p>
+    <p>Phone: <a href="tel:+60137345004">+60 13 734 5004</a></p>
+  </section>
+
+</body>
+</html>
